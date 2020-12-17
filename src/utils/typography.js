@@ -1,6 +1,6 @@
-import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
-
-const typography = new Typography(kirkhamTheme)
+import Typography from 'typography'
+import oceanBeachTheme from 'typography-theme-ocean-beach'
+ 
+const typography = new Typography(oceanBeachTheme)
 
 export default typography
