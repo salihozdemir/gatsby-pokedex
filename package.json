@@ -23,6 +23,8 @@
     "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
+    "postcss-custom-media": "^7.0.8",
+    "postcss-nested": "^5.0.3",
     "prettier": "2.1.2"
   },
   "keywords": [
@@ -37,7 +39,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
+  "postcss-custom-mediarepository": {
     "type": "git",
     "url": "https://github.com/salihozdemir/gatsby-pokedect"
   }

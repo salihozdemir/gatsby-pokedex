@@ -22,8 +22,6 @@ module.exports = {
         url: "https://graphql-pokemon2.vercel.app",
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
