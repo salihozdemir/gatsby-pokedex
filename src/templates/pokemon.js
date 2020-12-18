@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -9,8 +9,10 @@ const Pokemon = ({ data }) => (
     <SEO title="Home" />
     <p>{data.pokemonApi.pokemon.name}</p>
     <p>{data.pokemonApi.pokemon.number}</p>
-    <img src={data.pokemonApi.pokemon.image}/>
-    <img src={`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/${data.pokemonApi.pokemon.number}.png`} />
+    <img src={data.pokemonApi.pokemon.image} alt=" d"/>
+    <img
+      src={`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/${data.pokemonApi.pokemon.number}.png`} alt="2"
+    />
   </Layout>
 )
 
