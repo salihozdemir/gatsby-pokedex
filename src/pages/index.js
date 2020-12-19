@@ -1,23 +1,19 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+import CardContainer from "../components/PokeCard/CardContainer"
+import Card from "../components/PokeCard"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <ul>
+    <CardContainer>
       {data.pokemonApi.pokemons.map(pokemon => (
-        <li>
-          <Link key={pokemon.id} to={`/${pokemon.name}`}>
-            {pokemon.name}
-          </Link>
-        </li>
+        <Card key={pokemon.id}>{pokemon.name}</Card>
       ))}
-    </ul>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    </CardContainer>
   </Layout>
 )
 
