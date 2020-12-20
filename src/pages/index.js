@@ -3,8 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import CardContainer from "../components/Card/CardContainer"
-import Card from "../components/Card"
+import Card, { CardContainer } from "../components/Card"
 
 const IndexPage = ({ data }) => (
   <Layout>

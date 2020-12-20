@@ -11,8 +11,13 @@ const Card = ({ name, number, types }) => {
         <Image filename={`pokemons/${number}.png`} alt={name} />
       </div>
       <div className={styles.pokemonInfo}>
-        <p>{number}</p>
-        <h5>{name}</h5>
+        <p className={styles.number}>#{number}</p>
+        <h3 className={styles.name}>{name}</h3>
+        <div>
+          {types.map(type => (
+            <span>{type}</span>
+          ))}
+        </div>
       </div>
     </div>
   )
