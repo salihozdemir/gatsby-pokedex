@@ -12,8 +12,8 @@ const Image = ({ filename, ...props }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 100) {
-                  ...GatsbyImageSharpFixed_tracedSVG
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -29,8 +29,8 @@ const Image = ({ filename, ...props }) => (
         return null
       }
 
-      const imageFixed = image.node.childImageSharp.fixed
-      return <Img fixed={imageFixed} {...props} />
+      const imageFluid = image.node.childImageSharp.fluid
+      return <Img fluid={imageFluid} {...props} />
     }}
   />
 )
