@@ -1,9 +1,9 @@
 import React from "react"
 
-import styles from "./type-tag-container"
+import styles from "./type-tag-container.module.css"
 
 const TypeTagContainer = ({ children }) => {
-  return <div>{children}</div>
+  return <div className={styles.typeTagContainer}>{children}</div>
 }
 
 export default TypeTagContainer

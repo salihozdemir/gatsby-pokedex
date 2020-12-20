@@ -1,6 +1,7 @@
 import React from "react"
 
 import Image from "../image"
+import TypeTag, { TypeTagContainer } from "../TypeTag"
 
 import styles from "./card.module.css"
 
@@ -13,11 +14,11 @@ const Card = ({ name, number, types }) => {
       <div className={styles.pokemonInfo}>
         <p className={styles.number}>#{number}</p>
         <h3 className={styles.name}>{name}</h3>
-        <div>
+        <TypeTagContainer>
           {types.map(type => (
-            <span>{type}</span>
+            <TypeTag key={type} name={type} />
           ))}
-        </div>
+        </TypeTagContainer>
       </div>
     </div>
   )
