@@ -40,7 +40,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `JetBrains Mono`,
+          `K2D`,
           `source sans pro\:400,500,600,700`, // you can also specify font weights and styles
         ],
         display: "swap",

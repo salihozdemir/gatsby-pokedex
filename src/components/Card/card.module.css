@@ -11,12 +11,18 @@
   &:hover {
     transform: scale(1.02);
     border-color: black;
+
+    .imageWrapper {
+      filter: drop-shadow(2px 4px 3px black);
+    }
   }
 }
 
 .imageWrapper {
   width: 100%;
   max-width: 200px;
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(2px 2px 1px black);
 }
 
 .pokemonInfo {

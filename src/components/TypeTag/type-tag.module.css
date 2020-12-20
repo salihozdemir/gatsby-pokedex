@@ -1,11 +1,16 @@
 .typeTag {
   --bgColor: white;
   --textColor: var(--c-text);
-  font-size: 10px;
+  font-size: 12px;
   margin-right: 5px;
   border: 1px solid #ececec;
   padding: 5px 10px 5px 10px;
   border-radius: 10px;
   color: var(--textColor);
   background-color: var(--bgColor);
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    box-shadow: 0px 0px 4px 0px var(--bgColor)
+  }
 }

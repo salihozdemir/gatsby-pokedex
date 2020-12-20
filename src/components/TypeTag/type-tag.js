@@ -12,6 +12,7 @@ const whiteColorTypes = [
   "Fighting",
   "Rock",
   "Ghost",
+  "Flying",
 ]
 
 const TypeTag = ({ name }) => {
