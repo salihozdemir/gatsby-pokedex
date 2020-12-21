@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.pokemonApi.pokemons.forEach(({ name }) => {
     actions.createPage({
       path: name,
-      component: path.resolve("./src/templates/pokemon.js"),
+      component: path.resolve("./src/templates/Pokemon/pokemon.js"),
       context: {
         slug: name,
       },
