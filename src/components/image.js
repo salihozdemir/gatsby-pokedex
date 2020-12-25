@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -34,5 +35,9 @@ const Image = ({ filename, ...props }) => (
     }}
   />
 )
+
+Image.propTypes = {
+  filename: PropTypes.string,
+}
 
 export default Image

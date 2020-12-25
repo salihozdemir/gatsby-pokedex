@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Pokedex`,
+    description: `It shows the Pokemon. The purpose of the production is to practice with Gatsbyjs.`,
+    author: `@salihozdemir`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,21 +33,15 @@ module.exports = {
         background_color: `#ff3838`,
         theme_color: `#ff3838`,
         display: `minimal-ui`,
-        icon: `src/images/pokeball.png`, // This path is relative to the root of the site.
+        icon: `src/images/pokeball.png`,
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `K2D`,
-          `source sans pro\:400,500,600,700`, // you can also specify font weights and styles
-        ],
+        fonts: [`K2D`, `source sans pro\:400,500,600,700`],
         display: "swap",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

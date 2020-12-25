@@ -11,7 +11,7 @@ import styles from "./pokemon.module.css"
 
 const Pokemon = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title={data.pokemonApi.pokemon.name} />
     <div className={styles.card}>
       <Link to="/" className={styles.back}>
         <svg

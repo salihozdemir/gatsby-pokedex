@@ -7,7 +7,7 @@ import Card, { CardContainer } from "../components/Card"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Pokedex" />
     <CardContainer>
       {data.pokemonApi.pokemons.map(pokemon => (
         <Card
