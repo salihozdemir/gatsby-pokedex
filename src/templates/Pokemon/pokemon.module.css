@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 900px;
@@ -8,6 +9,31 @@
   padding: 40px;
   border: 1px solid #dadce0;
   border-radius: 10px;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+
+  &:hover {
+    text-decoration: underline;
+    background-color: #efefef;
+  }
+
+  span {
+    margin-bottom: 2px;
+  }
+
+  svg {
+    width: 24px;
+    margin-right: 5px;
+  }
 }
 
 .pokemonRow {
